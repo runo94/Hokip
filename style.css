@@ -1,0 +1,1826 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight: 100;
+	color:#5a5a5a;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:101.4em) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+
+
+/*CUSTOM CSS*/
+
+
+
+.fa-3x {
+    font-size: 3em !important;
+}
+
+.outer-header {
+	background-color: #f7f0e9;
+	width: 100%;
+}
+
+.header-menu .nav ul {
+	margin: 0 -30px;
+}
+
+.header-menu .nav ul li {
+	display: inline-block;
+	margin: 0 5px;
+    font-size: 13px;
+}
+
+.header-menu .nav ul li:first-child {
+	margin: 0 5px 0 0;
+}
+
+.header-menu .nav ul li:last-child {
+	margin: 0 0 0 5px;
+}
+
+.logo {
+	margin: 94px 0 0;
+}
+
+.header-menu {
+	margin: 133px 0 37px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #786963;
+}
+
+.header-menu a{
+    color: #786963;
+}
+
+.header-menu a:hover{
+	color: #ad7963;
+	text-decoration: none;
+	border-bottom: 1px solid #ad7963;
+	padding: 0 0 4px;
+}
+
+.header .navbar-toggle {
+    background-color: #786963;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+
+.preise .first-part {
+	margin: 20px 0 0;
+}
+
+.pic-1, .pic-2 {
+	padding: 0!important;
+}
+
+.preise section h1 {
+	display: none;
+}
+
+.preise .txt .centered {
+	display: block;    
+	max-width: 476px;
+    width: auto;
+    margin: 0 auto;
+    color: #5a5a5a;
+}
+
+.preise .txt .centered span {
+	font-size: 20px;
+}
+
+
+.preise .first-part .centered ul{
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.preise .seccond-part .centered{
+    display: block;
+    max-width: 476px;
+    width: auto;
+    margin: 20% auto 0;
+    font-size: 16px;
+	line-height: 36px; 
+}
+
+.preise .txt {
+	font-size: 16px;
+	line-height: 36px; 	
+}
+
+.preise .txt ul li{
+	font-size: 16px;
+	line-height: 36px; 
+	margin: 0 0 0 18px;
+}
+
+.unserer-mitarbeiterinnen section h1 {
+	display: none;
+}
+
+.unserer-mitarbeiterinnen .sec-header .txt {
+	background: #ad7963;
+	padding: 20px 60px;
+	color:#fff;
+	font-size: 15px;
+}
+
+.beispiel-seite .txt .normal-width {
+	max-width: 520px;
+}
+
+.unserer-mitarbeiterinnen .sec-header .txt .normal-width {
+	max-width: 520px;
+}
+
+.unserer-mitarbeiterinnen .sec-header .txt span {
+	font-size: 34px;
+	text-transform: uppercase;
+}
+
+.unserer-mitarbeiterinnen .sec-header .image img{
+	width: 100%;
+}
+
+.unserer-mitarbeiterinnen .sec-footer .txt {
+	background: #ad7963;
+	padding: 5% 60px;
+	color:#fff;
+	font-size: 15px;
+    vertical-align: bottom;
+    display: inline-block;
+    float: none;
+}
+
+.unserer-mitarbeiterinnen .sec-footer .txt .normal-width {
+	max-width: 520px;    
+	margin: 0;
+    float: right;
+}
+
+.unserer-mitarbeiterinnen .sec-footer .image img{
+	width: 100%;
+}
+
+.unserer-mitarbeiterinnen .sec-footer .image {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 0 -2px;
+    float: none;
+}
+
+.unserer-mitarbeiterinnen .sec-footer  {
+	margin: 0 2px;
+}
+
+
+.unserer-mitarbeiterinnen .header.container {
+	margin: 0 auto;
+}
+
+
+.unserer-mitarbeiterinnen .container {
+  margin-top: 10px;
+}
+ 
+
+.unserer-mitarbeiterinnen .header .container {
+  margin-top: 0px;
+}
+
+.unserer-mitarbeiterinnen .panel {
+  box-shadow: none !important;
+}
+
+.unserer-mitarbeiterinnen .panel.owm-panel {
+	border-radius: 0;
+	background: #ad7963; 
+	border:0;
+}
+
+.unserer-mitarbeiterinnen .panel.owm-panel .panel-heading {
+	border-radius: 0;
+	border:0;
+}
+
+.unserer-mitarbeiterinnen .panel.owm-panel .panel-body {
+    padding: 15px;
+    background: #fff;
+}
+
+.unserer-mitarbeiterinnen .panel.owm-panel .own-button {
+	background: transparent;
+	color: #fff;
+	width: 36px;
+	height: 36px;
+}
+
+.unserer-mitarbeiterinnen .panel.owm-panel span {
+	display: inline-block;
+	font-size: 16px;
+    top: 4px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.rotate {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+}
+
+.unserer-mitarbeiterinnen .panel-body .wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.unserer-mitarbeiterinnen .panel-body .wrapper span {
+	font-weight: 600;
+	color: #000;
+	line-height: 2;
+}
+
+
+.unserer-mitarbeiterinnen .title {
+	text-align: center;
+	color:#786963;
+	font-size: 1.4em;
+}
+
+
+.ch-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.ch-info-wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.ch-info-front img{
+  width: 100%;
+}
+
+.ch-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+
+.ch-info .ch-info-back {
+  transform: rotate3d(0,1,0,180deg);
+}
+
+.ch-info-front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  z-index: 2
+}
+
+.ch-info-front:hover {
+	z-index: 1;
+}
+
+.ch-info-back {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background: rgba(184,138,118, .8);
+  backface-visibility: visible;
+  top: 0;
+  right: 0;
+}
+
+.ch-info-back:hover {
+	z-index: 
+}
+
+.ch-info-back p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20% 10px;
+
+}
+
+.unserer-mitarbeiterinnen .ch-info-back span {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+
+.ch-item:hover .ch-info {
+  transform: rotate3d(0,1,0,-180deg);
+}
+
+.beispiel-seite {
+	font-family: 'Open Sans', sans-serif;
+	color: #5a5a5a;
+}
+
+.beispiel-seite section h1 {
+	display: none;
+	max-height: 423px;
+}
+
+.beispiel-seite .first-block .image{
+	background: #c8927b;
+}
+
+.beispiel-seite .first-block .image img{
+	margin: 10px auto;
+	display: block;
+	max-height: 426px;
+}
+
+.beispiel-seite .first-block .txt{
+	background: #a97059;
+	padding: 1% 60px;
+	color: #fff;
+	font-size: 1.4em;
+    max-height: 423px;
+}
+
+.beispiel-seite .first-block .txt span {
+	font-size: 36px;
+}
+
+.beispiel-seite .first-block .txt sub {
+	vertical-align: top;
+}
+
+.beispiel-seite .first-block .txt i{
+	font-size: 16px;
+}
+
+
+.beispiel-seite .sec-block .image{
+	background: #f5f0e9;
+	max-height: 432px
+}
+
+.beispiel-seite .sec-block .image img{
+	margin: 10px auto;
+	display: block;
+}
+
+.beispiel-seite .sec-block .txt{
+	background: #f5f0e9;
+    padding: 10% 60px 8.7%;
+    color: #5a5a5a;
+    font-size: 1.4em;
+    top: -27px;
+    max-height: 437px;
+}
+
+.beispiel-seite .sec-block .txt p,  .beispiel-seite .fiv-block .txt p{
+	max-width: 520px;
+}
+
+
+.beispiel-seite .third-block .txt p, .beispiel-seite .forth-block .txt p {
+	max-width: 520px;
+	float: right;
+}
+.beispiel-seite .sec-block .txt i{
+	font-size: 16px;
+}
+
+.beispiel-seite .third-block .image{
+	background: #fff;
+    top: -27px;
+    max-height: 331px;
+}
+
+.beispiel-seite .third-block .image img{
+	margin: 10px auto;
+	display: block;
+}
+
+.beispiel-seite .third-block .txt{
+	background: #fff;
+    padding: 6% 60px;
+    color: #5a5a5a;
+    font-size: 1.4em;
+    top: -27px;
+    max-height: 330px;
+}
+
+.beispiel-seite .third-block .txt i{
+	font-size: 16px;
+}
+
+.beispiel-seite .forth-block {
+	top: 10px;
+    position: relative;
+    background: #c8927b;
+}
+
+.beispiel-seite .forth-block .image{
+	background: #c8927b; 
+    top: -37px;
+    max-height: 460px;
+}
+
+.beispiel-seite .forth-block .image img{
+	margin: 10px auto;
+	display: block;
+}
+
+.beispiel-seite .forth-block .txt{
+	background: #a97059;
+    padding: 8% 60px;
+    height: 451px;
+    color: #fff;
+    font-size: 1.4em;
+    top: 0;
+    max-height: 451px;
+}
+
+.beispiel-seite .forth-block .txt i{
+	font-size: 16px;
+}
+
+.beispiel-seite .fiv-block .image{
+	background: #f5f0e9;
+    max-height: 374px;
+}
+
+.beispiel-seite .fiv-block .image img{
+	margin: 10px auto;
+	display: block;
+}
+
+.beispiel-seite .fiv-block .txt{
+	background: #f5f0e9;
+    padding: 7% 60px 8.8%;
+    color: #5a5a5a;
+    font-size: 1.4em;
+    top: -27px;
+    max-height: 401px;
+}
+
+.beispiel-seite .fiv-block .txt i{
+	font-size: 16px;
+}
+
+.beispiel-seite .title_contact {
+	display: block;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.beispiel-seite .contact_description {
+	display: block;
+	font-size: 1.4em;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	width: 50%;
+}
+
+.beispiel-seite .required {
+	display: block;
+	font-size: 1.4em;
+    margin: 70px 0 0 0;	
+}
+
+
+.beispiel-seite .wpcf7-form label{
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.beispiel-seite .wpcf7-form span{
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	margin: 0 !important;
+}
+
+.beispiel-seite .wpcf7-checkbox {
+	max-width: 190px;
+	width: 100%;
+	display: block;
+	font-size: 1.2em;
+	color: #5a5a5a;
+}
+
+.beispiel-seite .nivo-caption {
+	position: absolute;
+    top: 60px;
+    left: 60px;
+    height: 53px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #a97059;
+    font-weight: 100;
+    font-size: 2.2em;
+}
+
+.beispiel-seite .theme-default .nivo-controlNav {
+	position: absolute;
+    bottom: 17px;
+}
+
+.beispiel-seite .metaslider .theme-default .nivoSlider img{
+    max-height: 768px;
+}
+
+.beispiel-seite .wpcf7-form input[type="checkbox"]{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+
+.beispiel-seite .wpcf7-form input {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.beispiel-seite .wpcf7-form select {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	background: transparent;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+  	appearance: none;
+}
+
+.beispiel-seite .wpcf7-form .wpcf7-form-control-wrap.Betreff:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/Kontact-LG.png);
+	background-size: 100% 100%;
+    width: 23px;
+    height: 23px;
+    top: 0;
+    right: 13px;
+}
+
+.beispiel-seite .wpcf7-form textarea {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+.beispiel-seite .wpcf7-form input[type="submit"] {
+	background: #bf7a62;
+	color: #fff;
+	text-transform: uppercase;
+	max-width: 250px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+
+.footer {
+	background: #ece4d9;
+	padding: 20px 0 0;
+}
+
+.widget-left ul li, .widget-center ul li, .widget-right ul li {
+	list-style: none;
+	color: #786963;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+.widget-left ul li a, .widget-right ul li a {
+	color: #786963;	
+}
+
+.footer .social-icons-lists.social-icons-greyscale .socicon {
+	background-color: transparent;
+    border: 1px solid #786963;
+    border-radius: 50%;
+    color: #786963;
+}
+
+.footer .copyright {
+	background:#786963;
+	padding: 10px 30px 0;
+	color: #fff;
+}
+
+.page-template-template-jobs .sec-header .txt {
+	background: #ad7963;
+	padding: 20px 60px;
+	color:#fff;
+	font-size: 15px;
+}
+
+.page-template-template-jobs .sec-header .txt .normal-width {
+    max-width: 620px;
+    padding: 18% 0;
+    font-size: 1.4em;
+    line-height: 44px;
+}
+
+.page-template-template-jobs .sec-header .txt span {
+	font-size: 34px;
+	text-transform: uppercase;
+}
+
+.page-template-template-jobs .sec-header .image img{
+	width: 100%;
+}
+
+.page-template-template-jobs .wrapper {
+	max-width: 700px !important;
+	margin: 30px auto 0;
+	font-size: 1.2em;
+}
+
+.page-template-template-jobs .wrapper strong{
+	display: block;
+}
+
+.page-template-template-jobs .wrapper ul{
+	margin: 60px 0;
+	padding: 0;
+}
+
+.contact-list {
+	margin: 20px 0 0 0;
+}
+
+.kontakte .widget_text {
+	font-family: 'Open Sans', sans-serif;
+	color: #5a5a5a;
+}
+
+.kontakte .widget_text h3{
+	font-style: italic;
+	font-weight: 300; 
+}
+
+.contact-list strong{
+	display: block;
+	color:#5a5a5a;
+}
+
+.contact-list .contact {
+	min-height: 150px;
+    padding: 0 15px 0 65px;
+    font-size: 1.2em;
+	color:#5a5a5a;
+}
+
+.contact-list .contact p{
+	display: block;
+}
+
+.phone:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic3.png);
+	background-size: 100% 100%;
+	width: 28px;
+	height: 28px;
+    top: 60px;
+    left: 20px;
+}
+
+.contact-list .top-part.contact {
+    padding: 0 15px;
+}
+
+.contact-list .top-part.contact .email:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic2.png);
+	background-size: 100% 100%;
+	width: 28px;
+	height: 28px;
+    top: 128px;
+    left: -18px;
+}
+
+.contact-list .top-part.contact .pointer:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic1.png);
+	background-size: 100% 100%;
+    width: 35px;
+    height: 35px;
+    top: 29px;
+    left: -20px;
+}
+
+.contact-list .contact .viktring:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic10.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 13px;
+}
+
+.contact-list .contact .reifnitz:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic4.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 13px;
+}
+
+.contact-list .contact .annabichl:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic8.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 13px;
+}
+
+.contact-list .contact .annabichl:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2017/02/img6-2.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 45px;
+    left: 13px;
+    padding: 3px 3px 0 3px;
+    
+}
+
+.contact-list .contact .klagenfurt:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic11.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: -6px;
+    left: 13px;
+}
+
+.contact-list .contact .klagenfurt:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic9.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 45px;
+    left: 13px;
+    padding: 3px 3px 0 3px;
+    
+}
+
+.contact-list .contact .waidmannsdorf:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/ic8.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 13px;
+}
+
+.contact-list .contact .waidmannsdorf:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2017/02/img5-2.png);
+	background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    top: 45px;
+    left: 13px;
+    padding: 3px 3px 0 3px;
+    
+}
+
+.contact-list .wpcf7-form label{
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.contact-list .wpcf7-form span{
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.contact-list .wpcf7-form input {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.contact-list .wpcf7-form select {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	background: transparent;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+  	appearance: none;
+}
+
+.contact-list .wpcf7-form .wpcf7-form-control-wrap.Betreff:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(/wp-content/uploads/2016/12/Kontact-LG.png);
+	background-size: 100% 100%;
+    width: 23px;
+    height: 23px;
+    top: 0;
+    right: 13px;
+}
+
+.contact-list .wpcf7-form textarea {
+	max-width: 480px;
+	width: 100%;
+	border: 1px solid #bf7a62;
+	font-size: 1.2em;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+.contact-list .wpcf7-form input[type="submit"] {
+	background: #bf7a62;
+	color: #fff;
+	text-transform: uppercase;
+	max-width: 250px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.contact-list .title {
+	font-size: 1.35em;
+	font-weight: 600;
+	color: #5e5e5e;
+	margin: 20px 0 10px 0;
+}
+
+.page-template-template-jobs .jobs li{
+	list-style: none;
+}
+
+.page-template-template-jobs .jobs hr{
+	border: 1px solid #ad7963;	
+}
+
+.home_header_bg {
+	background: #eee4d9;
+}
+
+.sidebar-widget {
+	font-size: 16px;
+}
+
+@media screen and (min-width: 1640px) {
+	.unserer-mitarbeiterinnen .sec-header .txt {
+    	padding: 6% 60px;
+	}
+	.unserer-mitarbeiterinnen .sec-footer .txt {
+		padding: 6% 60px;
+	}
+
+	.text_on_image {
+		position: absolute !important;
+	    padding: 10% 6%;
+	    width: 50%;
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width:992px)  {
+
+	.logo {
+		margin: 27px 0 27px 0;
+	}
+
+	.logo-img {
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	.header-menu {
+		margin: 0 0 27px;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    color: #786963;
+	}
+
+	.header-menu .nav ul {
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	.unserer-mitarbeiterinnen .sec-footer .image {
+		width: 100%;
+	}
+
+	.beispiel-seite .six-block {
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width:768px)  {
+	.logo {
+		margin: 27px 0 27px 0;
+	}
+
+	.logo-img {
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	.header-menu {
+		margin: 0;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    color: #786963;
+    	text-align: center;
+	}
+
+	.header-menu .nav ul {
+	    margin: 0 auto;
+	    display: block;
+   		padding: 0;
+	}
+
+	.header-menu .nav ul li{
+		margin:0 0 27px;
+	}
+
+	.pic-1 img, .pic-2 img{
+		margin: 0 auto 20px;
+		display: block;
+	}
+
+	.preise .txt .centered {
+	    margin: 0 auto 20px;		
+	}
+
+	.preise .seccond-part .centered{
+	    margin: 0 auto 0;
+	}
+
+	.unserer-mitarbeiterinnen .sec-footer .image {
+		width: 100%;
+	}
+
+	.beispiel-seite .six-block {
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.logo-img {
+	    margin: 0 auto;
+	    display: block;
+	}
+
+	.header-menu {
+		margin: 0;
+	}
+
+	.header-menu .nav ul {
+	    margin: 0 auto;
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.header-menu .nav ul li {
+		display: block;
+		border-bottom: 2px solid #fff;
+		padding: 10px 0;
+		text-align: center;
+	}
+
+	.pic-1 img, .pic-2 img{
+		margin: 0 auto 20px;
+		display: block;
+	}
+
+	.preise .txt .centered {
+	    margin: 0 auto 20px;		
+	}
+	
+	.preise .seccond-part .centered{
+	    margin: 0 auto 0;
+	}
+
+	.preise .first-part .centered ul {
+		padding: 0;
+	}
+
+	.unserer-mitarbeiterinnen .sec-footer .image {
+		width: 100%;
+	}
+
+	.die-tagesstatten .metaslider .slides img {
+		width: 100% !important;
+	}
+
+	.die-tagesstatten .metaslider .caption-wrap {
+		width: 100% !important;
+		position: relative !important;
+	}
+
+	.beispiel-seite .six-block {
+		margin: 0 20px;
+	}
+
+	.metaslider-nivo {
+		display: none;
+	}
+
+	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{
+    	display: none;
+	}
+
+	#spoiler_47 #avs-eleme-3 {
+		display: none;
+	}
+
+	.ch-item div{
+		height: 100% !important;
+	}
+
+
+	.vbottom .text_on_image {
+		padding: 5% 6%;
+	}
+
+	.unserer-mitarbeiterinnen .sec-header .txt span {
+		font-size: 28px;
+	}
+}
+
+/* TEMPLATE -  DIE TAGESSTÄTTEN */
+
+.dd-left-block{
+	background:#ad7963;
+	color:#fff;
+}
+
+.dd-img{
+	width:100%;
+}
+	
+.dd-third-block{
+	background:#EEE4D9;
+}
+
+.dd-third-block a {
+	border:2px solid #B77059;
+	border-radius:3px;
+	padding:10px 25px;
+	color:#B77059;
+	
+}
+.dd-third-block a:hover, .dd-third-block a:active, .dd-third-block a:focus{
+	text-decoration:none;
+	color:#B77059;
+	
+}
+	
+.dd-fourth-block{
+	background:#EEE4D9;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.dd-fourth-block a {
+	border:2px solid #B77059;
+	border-radius:3px;
+	padding:10px 25px;
+	color:#B77059;
+	
+}
+.dd-fourth-block a:hover, .dd-fourth-block a:active, .dd-fourth-block a:focus{
+	text-decoration:none;
+	color:#B77059;
+	
+}
+
+.dd-fifth-block .dd-right-block img{
+	float: right;
+}
+
+.dd-fifth-block .dd-left-block p {
+	max-width: 520px;
+	width: 90%;
+
+}
+
+.dd-fifth-block .dd-left-block {
+	padding-top: 2%;
+	padding-bottom: 2%; 
+}
+
+.dd-separator25{
+	margin-bottom:25px;
+}
+
+.dd-separator50{
+	margin-bottom:50px;
+}
+
+.die-tagesstatten .metaslider .flexslider {
+	background: #eee4d9;
+	margin: 0;
+}
+.die-tagesstatten .metaslider .slides img {
+	width: 50%;
+	position: relative;
+	float: right;
+}
+
+.die-tagesstatten .metaslider .caption-wrap {
+	float: left;
+	display: block;
+	position: absolute;
+	width: 50%;
+    height: 90%;
+	background-color: #a97059;
+}
+
+.die-tagesstatten .flex-direction-nav .flex-next {
+	right: 0;
+}
+
+.die-tagesstatten .metaslider .caption-wrap .caption{
+	width: 70%;
+	margin: 0 auto;
+    padding: 10% 0;
+	text-align: center;
+}
+
+.die-tagesstatten .metaslider .caption-wrap .caption h2 {
+	font-size: 1,8em;
+}
+
+.die-tagesstatten .metaslider .caption-wrap .caption span {
+	text-align: center;
+}
+
+.die-tagesstatten .metaslider .caption-wrap .caption span:before {
+	content: "";
+	background: url(/wp-content/uploads/2016/12/quotes.png);
+	background-size: 100% 100%;
+	background-position: center;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	display: block;
+	float: left;
+}
+.die-tagesstatten .metaslider .caption-wrap .caption span:after {
+	content: "";
+	background: url(/wp-content/uploads/2016/12/quotes.png);
+	background-size: 100% 100%;
+	background-position: center;
+	width: 10px;
+	height:10px;
+	position: relative;
+	display: block;
+	float: right;
+}
+
+.header .current_page_item a {
+	color: #ad7963;
+}
+
+.header .current_page_item  {
+	border-bottom: 1px solid #ad7963;
+	padding: 0 0 3px;
+}
+
+.title-spoiler {
+	height: 40px;
+}
+
+.title-spoiler p{
+	margin: 0;
+	font-weight: 600;
+}
+
+.text_on_image {
+	position: absolute !important;
+    padding: 23% 6%;
+    width: 50%;
+}
+
+.purechat-widget .purechat-widget-header, .purechat-window .purechat-widget-header, .purechat-hosted-widget .purechat-widget-header {
+	background: #bf7a62 !important;
+}
+
+.purechat.purechat-widget .purechat-btn i {
+	background-color: #bf7a62 !important;
+}
+
+.copyright p {
+	padding: 5px 0;
+}
+
+
+.dd-left-block h2, .dd-left-block p, .dd-left-block i{
+	padding: 0 0 0 20px;
+}
+
+.beispiel-seite .theme-default .nivo-controlNav a {
+	background:url('http://hokip.at.wptest.us/wp-content/uploads/2016/12/pic-2.png');
+}
+
+.beispiel-seite.das_konzept .first-block {
+	background: #ece4d9;
+}
+
+@media (max-width: 1199px) {
+	.beispiel-seite .first-block .txt {
+		max-height: 100%;
+	}
+
+.die-tagesstatten .flex-next {
+    background-position: -49px 0 !important;
+    right: 50% !important;
+}
+
+	.dd-left-block .normal-width {
+		max-width: 90% !important;
+		float: none !important;
+	}
+
+	.dd-right-block img {
+		margin: 0 auto;
+	}
+}
+
+.dd-right-block {
+	background-color: #ad7963;
+}
+
+.dd-right-block img {
+	max-width: 760px;
+    max-height: 515px;
+}
+
+.dd-left-block .normal-width {
+	max-width: 520px;
+    float: right;
+}
+
+.preise .first-part-text {
+    /*margin: 4% 0;*/
+
+}
+
+.preise p {
+    font-size: 16px; 
+    line-height: 36px;
+
+}
+
+.die-tagesstatten .flex-direction-nav a {
+	background: url(http://hokip.at.wptest.us/wp-content/uploads/2016/12/1.png) no-repeat 0 0;
+	width: 55px;
+    height: 55px;
+}
+
+.die-tagesstatten .flex-next {
+    background-position: -49px 0 !important;
+    right: 50% !important;
+}
+
+
+.offene-stellen .wpcf7-form input {
+    max-width: 680px;
+    width: 100%;
+    border: 1px solid #bf7a62;
+    font-size: 1.2em;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.offene-stellen .wpcf7-form textarea {
+    width: 100%;
+    border: 1px solid #bf7a62;
+    font-size: 1.2em;
+    padding: 10px;
+    height: 236px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.offene-stellen .wpcf7-file
+{
+	background:url(http://hokip.at.wptest.us/wp-content/uploads/2017/01/img-1.png) no-repeat;
+    color: #000;
+    color: transparent;
+    text-indent:-9999em;
+    height: 236px;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 10px 0;
+}
+
+.offene-stellen .wpcf7-form input[type="submit"] {
+    background: #bf7a62;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.offene-stellen .margins h2 {
+    word-wrap: break-word;
+}
+
+.text_image {
+    position: relative;
+    display: block;
+	margin: 15px auto 30px;
+    padding: 30px 0 0;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px){
+	.caption-wrap{
+		font-size: 13px;
+	}
+
+	.metaslider-845	.caption{
+		margin:-54px auto !important;
+	}
+
+	.caption h2{
+		font-size:14px;
+	}
+
+	.text_image {
+	    display: none;
+	}
+
+	#spoiler_47 #avs-eleme-3 {
+		display: none;
+	}
+} 
+
+@media screen and (max-width: 640px){
+
+	.vbottom .text_on_image {
+		padding: 0 6%;
+	}
+
+	.vbottom .text_on_image p {
+		display: none;
+	}
+
+	.vbottom .text_on_image h2 {
+		font-size: 18px;
+	}
+
+	.unserer-mitarbeiterinnen .panel.owm-panel span {
+		width: 200px;
+	}
+
+	#spoiler_47 #avs-eleme-3 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1199px){
+
+	.text_image {
+	    display: none;
+	}
+
+}
+
+.google_map {
+	border:none;
+}
+.wp-image-710 {
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.navbar-collapse.collapse {
+	width: 68%;
+}
+
+#button-up {
+    cursor: pointer;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 999;
+    display: none;
+    width: 50px;
+    padding: 10px;
+    background: #ad7963;
+    border-radius: 50%;
+    border: 4px solid #ece4d9;
+}
+
+@media screen and (min-width: 767px) { 
+	#button-up {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.navbar .navbar-collapse.collapse {
+		width: 100%;
+	}
+}
